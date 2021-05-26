@@ -1,0 +1,88 @@
+
+TestCase 1
+Description: User must provide credentials and Login must be successfull
+
+1. Launch the URL
+Expected: Website must be launched successfully
+2. Enter UserName and Password
+Expected: UserName and Password must be accepted
+3. Click Login button
+Expected: Home page of the application should be displayed
+
+====================================================================================================
+
+TestCase 2
+Description: Validate with correct username and  empty password field & ViceVersa
+
+1. Launch the URL
+Expected: Website must be launched successfully
+2. Enter UserName and leave Password field blank
+Expected: UserName and blank password must be entered
+3. Click Login button
+Expected: Error message "Password is required" must be displayed 
+4. Click close icon in error message
+Expected: The error message must gone and icon in username and password field as well
+5. Enter UserName and leave Password field blank
+Expected: UserName and blank password must be entered
+6. Click Login button
+Expected: Error message "UserName is required" must be displayed 
+7. Click close icon in error message
+Expected: The error message must gone and icon in username and password field as well
+
+=====================================================================================================
+
+TestCase 3
+Description: Provide wrong userName and correct password & Vice Versa
+
+1. Launch the URL
+Expected: Website must be launched successfully
+2. Enter incorrect UserName and correct Password 
+Expected: UserName and password must be entered
+3. Click Login button
+Expected: Error message "UserName and password do not match any user in this service" must be displayed 
+4. Click close icon in error message
+Expected: The error message must gone and icon in username and password field as well
+5. Enter correct UserName and incorrect Password 
+Expected: UserName and password must be entered
+6. Click Login button
+Expected: Error message "UserName and password do not match any user in this service" must be displayed 
+7. Click close icon in error message
+Expected: The error message must gone and icon in username and password field as well
+
+====================================================================================================
+
+TestCase 4
+Description: Provide "locked_out_user" user
+
+1. Launch the URL
+Expected: Website must be launched successfully
+2. Enter "locked_out_user" UserName and Password
+Expected: UserName and Password must be accepted
+3. Click Login button
+Expected: Error Message "Sorry, this user has been locked out" must be displayed
+4. Click close icon in error message
+Expected: The error message must gone and icon in username and password field as well
+
+====================================================================================================
+
+TestCase 5
+Description: Provide "problem_user" user
+
+1. Launch the URL
+Expected: Website must be launched successfully
+2. Enter "problem_user" UserName and Password
+Expected: UserName and Password must be accepted
+3. Click Login button
+Expected: The image in the home page must not be displayed.
+
+====================================================================================================
+
+TestCase 6
+Description: Provide "performance_glitch_user" user
+
+1. Launch the URL
+Expected: Website must be launched successfully
+2. Enter "performance_glitch_user" UserName and Password
+Expected: UserName and Password must be accepted
+3. Click Login button
+Expected: It takes little more time to go to homepage.
