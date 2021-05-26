@@ -19,3 +19,9 @@ Selenium Project developed to automate Swag_Labs Login feature. It is implemente
 - assertions, waits and test extensions
 - meaningful test report output
 
+## Jar files used
+- commons-io.2.9.0
+- apache-poi-5.0.0
+- selenium java 3.141.59
+- selenium server standalone 3.141.59
+
